@@ -4,24 +4,19 @@
  */
 package com.mycompany.cafe.Model;
 
-import com.mycompany.cafe.Model.Order;
-
 /**
  *
  * @author lihac
  */
-public class modSauce extends DishDecorator{
-    public modSauce(Dish decoratedDish) {
-        super(decoratedDish);
-    }
-
+ class BaseDish implements Dish {
+     
     @Override
     public String getDescription() {
-        return decoratedDish.getDescription() + " + Fire Sauce";
+        return "NordicStew";
     }
 
     @Override
     public int getCost() {
-        return decoratedDish.getCost() + 10;
+        return 30;
     }
-}
+ }

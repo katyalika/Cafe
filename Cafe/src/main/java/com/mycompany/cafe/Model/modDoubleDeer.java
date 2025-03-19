@@ -10,6 +10,18 @@ import com.mycompany.cafe.Model.Order;
  *
  * @author lihac
  */
-public class modDoubleDeer extends Order{
-    
+public class modDoubleDeer extends DishDecorator{
+    public modDoubleDeer(Dish decoratedDish) {
+        super(decoratedDish);
+    }
+
+    @Override
+    public String getDescription() {
+        return decoratedDish.getDescription() + " + Double Deer";
+    }
+
+    @Override
+    public int getCost() {
+        return decoratedDish.getCost() + 20;
+    }
 }

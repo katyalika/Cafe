@@ -10,6 +10,18 @@ import com.mycompany.cafe.Model.Order;
  *
  * @author lihac
  */
-public class modBread extends Order{
-    
+public class modBread extends DishDecorator{
+    public modBread(Dish decoratedDish) {
+        super(decoratedDish);
+    }
+
+    @Override
+    public String getDescription() {
+        return decoratedDish.getDescription() + " + Nordic Bread";
+    }
+
+    @Override
+    public int getCost() {
+        return decoratedDish.getCost() + 7;
+    }
 }
