@@ -4,9 +4,9 @@
  */
 package com.mycompany.cafe.Model;
 
-import com.mycompany.cafe.Model.Dish;
-import java.awt.List;
+import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,10 +15,13 @@ import java.util.ArrayList;
 public class Order {    
     private ArrayList<Dish> dishes = new ArrayList<>(); 
     private String time;
+    
+     public Order (){
+         this.time = LocalTime.now().toString().substring(0, 8);
+     }
 
     public void addDish(Dish dish) {
         dishes.add(dish);
-        time = java.time.LocalTime.now().toString();
     }
 
     public String getOrderDetails() {
@@ -34,5 +37,13 @@ public class Order {
 
     public int getTotalCost() {
         return dishes.stream().mapToInt(Dish::getCost).sum();
+    }
+    
+    public String getTime() {
+        return time;
+    }
+    
+     public List<Dish> getDishes() {
+        return new ArrayList<>(dishes);
     }
 }
