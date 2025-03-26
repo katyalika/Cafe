@@ -16,7 +16,7 @@ import com.mycompany.cafe.Model.modSauce;
 public class Cafe {
 
     public static void main(String[] args) {
-         Dish stew = new BaseDish();
+        Dish stew = new BaseDish();
         Order order = new Order();
 
         // Example of adding modifiers
