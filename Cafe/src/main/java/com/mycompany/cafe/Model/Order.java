@@ -4,6 +4,7 @@
  */
 package com.mycompany.cafe.Model;
 
+import com.mycompany.cafe.Model.Dish;
 import java.awt.List;
 import java.util.ArrayList;
 
@@ -12,7 +13,7 @@ import java.util.ArrayList;
  * @author lihac
  */
 public class Order {    
-    private List<Dish> dishes = new ArrayList<>();
+    private ArrayList<Dish> dishes = new ArrayList<>(); 
     private String time;
 
     public void addDish(Dish dish) {

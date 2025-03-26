@@ -8,6 +8,6 @@ package com.mycompany.cafe.Control;
  *
  * @author lihac
  */
-public class OrderMaker {
+public class Controller {
     
 }

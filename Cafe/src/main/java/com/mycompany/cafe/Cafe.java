@@ -4,6 +4,7 @@
 
 package com.mycompany.cafe;
 
+import com.mycompany.cafe.Model.BaseDish;
 import com.mycompany.cafe.Model.Dish;
 import com.mycompany.cafe.Model.Order;
 import com.mycompany.cafe.Model.modBerries;
@@ -19,7 +20,6 @@ public class Cafe {
         Dish stew = new BaseDish();
         Order order = new Order();
 
-        // Example of adding modifiers
         stew = new modSauce(stew);
         stew = new modBerries(stew);
         order.addDish(stew);

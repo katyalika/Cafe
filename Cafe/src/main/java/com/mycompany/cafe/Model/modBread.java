@@ -4,8 +4,6 @@
  */
 package com.mycompany.cafe.Model;
 
-import com.mycompany.cafe.Model.Order;
-
 /**
  *
  * @author lihac

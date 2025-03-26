@@ -8,7 +8,7 @@ package com.mycompany.cafe.Model;
  *
  * @author lihac
  */
- class BaseDish implements Dish {
+ public class BaseDish implements Dish {
      
     @Override
     public String getDescription() {
